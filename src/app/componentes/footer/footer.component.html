@@ -1,0 +1,37 @@
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-logo">
+      <h1>Outdoors</h1>
+    </div>
+    <ul class="social-media">
+      @for (medio of medios; track medio.nombre) {
+        <li class="icon">
+          <a href="{{medio.url}}" class="icon-elem">{{medio.nombre}}
+            <img src="{{medio.icono}}" width="30px" height="30px">
+          </a>
+        </li>
+      } @empty {
+        Empty list of media
+      }
+    </ul>
+    <ul class="footer-menu">
+      <li class="menu-elem">
+        <a href="#navbar" class="menu-icon">Inicio</a>
+      </li>
+      <li class="menu-elem">
+        <a href="#about" class="menu-icon">Nosotros</a>
+      </li>
+      <li class="menu-elem">
+        <a href="#tours" class="menu-icon">Tours</a>
+      </li>
+      <li class="menu-elem">
+        <a href="#feedback" class="menu-icon">Feedbacks</a>
+      </li>
+      <li class="menu-elem">
+        <a href="/contacto" class="menu-icon">Contacto</a>
+      </li>
+    </ul>
+    <p class="footer-text">
+      &copy;2024 | Site by Ivan Nuñez & Jehosafat Riofrio
+    </p>
+  </footer>

@@ -1,0 +1,22 @@
+<div class="contact-container" id="contacto">
+  <h1>Contáctanos</h1>
+  <div class="contat-form">
+    <form [formGroup]="contactoForm" (ngSubmit)="onSubmit()" autocomplete="off">
+      <div class="row">
+        <div class="col">
+          <input type="text" formControlName="nombre" placeholder="Nombre" required>
+          <input type="text" formControlName="apellido" placeholder="Apellido" required>
+          <input type="email" formControlName="correo" placeholder="Correo" required>
+        </div>
+        <div class="col">
+          <textarea rows="5" cols="60" formControlName="mensaje" placeholder="Déjanos un mensaje" required></textarea>
+        </div>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+
+    
+  </div>
+  <h2 class="contact-text-secondary">También nos puedes ubicar en nuestras oficinas:</h2>
+  <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.057349100955!2d-79.86864682522055!3d-2.1316556978493475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6db913847953%3A0x2c0fd6c403ea6faf!2sUEES%20Universidad%20Espíritu%20Santo.!5e0!3m2!1ses!2sec!4v1718636167777!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>

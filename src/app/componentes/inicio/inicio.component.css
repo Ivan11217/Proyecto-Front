@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins' , 'sans-serif';
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  body, html {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  .hero-section {
+      min-height: 100vh;
+      width: 100%;
+      background-image:linear-gradient(rgba(5, 16, 61, 0.6) ,rgba(1, 10, 49, 0.3)),  url(https://images.unsplash.com/photo-1580933884561-245548c0396c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 100px 100px rgba(0,0,0,0.9) inset;
+  }
+
+  /* DIVIDER */
+  .b-example-divider {
+    width: 100%;
+    height: 1rem;
+    background-color: rgba(0, 0, 0, 0.144);
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, 0.603), inset 0 .125em .5em rgba(0, 0, 0, 0.767);
+  }
+  
+  /* NOSOTROS */
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .inner-container {
+    background-image: linear-gradient(rgba(5, 16, 61, 0.6), rgba(1, 10, 49, 0.3)), url(https://images.unsplash.com/photo-1639932601837-3c8ed43283c7?q=80&w=1921&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15rem 2rem; 
+  }
+  
+  .content-wrapper {
+    gap: 2rem;
+    display: flex;
+  }
+  
+  .image-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .lazy-image {
+    cursor: pointer;
+    position: relative;
+    left: 5rem;
+    object-position: center;
+    width: 35rem;
+    height: 25rem;
+    border: 3px solid black;
+    transition: all .3s;
+    opacity: .5;
+  }
+  
+  .lazy-image:hover {
+    transform:translateX(-3rem);
+    opacity: 1;
+  }
+  
+  .about-text-column {
+    position: relative;
+    left: 28rem;
+    top: -1rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    margin: auto 0;
+  }
+  
+  .about-title {
+    position: relative;
+    right: 4rem;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  
+  .about-text {
+    position: relative;
+    right: 4rem;
+    text-align: center;
+    width: 40rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  
+  /* TOURS  */
+  
+  .tours-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
+  
+  .card {
+    cursor: pointer;
+    width: 360px;
+    height: 510px;
+    background-color: #110352;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    transition: all 0.3s;
+    outline: 1px solid #15163b;
+    opacity: 0.6;
+  }
+  
+  .card:hover {
+    opacity: 1;
+  }
+  
+  .card img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-content h3{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  
+  .card-content p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .card:hover {
+    transform: translateY(-30px);
+    /* background-color: #28416d; */
+    box-shadow:  0px 40px 20px rgba(0,0,0,0.3);
+  }
+  
+  
+  .tours {
+    background-image: linear-gradient(rgba(5, 16, 61, 0.6) ,rgba(1, 10, 49, 0.3)), url(https://images.unsplash.com/photo-1664235381765-ef978df11159?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    padding-bottom: 2rem;
+  }
+  
+  .tours h1{
+    color: white;
+    padding-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .btn-tours {
+    font-weight: 600;
+    background-color: #fff;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 12px 8px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+  }
+  
+  .btn-tours:hover {
+    background-color: #080680;
+    color: #fff;
+  }
+  
+  /* FEEDBACK */
+  
+  .feedback {
+    background-image: linear-gradient(rgba(5, 16, 61, 0.2) ,rgba(1, 10, 49, 0.3)), url(https://images.unsplash.com/photo-1487132906645-8e0fbba067e0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    min-height: 800px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 79px 60px;
+  }
+  
+  
+  .text-container {
+    position: relative;
+    display: flex;
+    margin-bottom: 23px;
+    width: 1004px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  
+  .main-heading {
+    color: #000;
+    text-transform: capitalize;
+    align-self: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.72px;
+  }
+  
+  .testimonial {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 138px;
+    border-radius: 2rem;
+    padding: 40px 38px;
+    transition: all 0.3s;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-1rem);
+  }
+  
+  
+  .testimonial-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  
+  .image-column {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    margin-left: 0;
+  }
+  
+  
+  .testimonial-image {
+    aspect-ratio: 1.1;
+    object-fit: auto;
+    object-position: center;
+    width: 162px;
+    max-width: 100%;
+    flex-grow: 1;
+  }
+  
+  
+  .text-column {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    margin-left: 20px;
+  }
+  
+  .testimonial-text {
+    color: #000;
+    align-self: stretch;
+    margin: auto 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.48px;
+  }

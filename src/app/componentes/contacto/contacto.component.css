@@ -1,0 +1,104 @@
+/* CONTACTO */
+
+.contact-container {
+    background-image: linear-gradient(rgba(5, 16, 61, 0.6) ,rgba(1, 10, 49, 0.3)), url(https://images.unsplash.com/photo-1664235381765-ef978df11159?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .contact-form {
+    margin: 2rem;
+  }
+  
+  input {
+    background-color: #b7b7b7;
+    width: 80%;
+    color: #fff;
+    margin-left: 12%;
+    font-size: 1.5rem;
+    padding: 16px 16px;
+    border-radius: 2rem;
+    border-color: #000;
+    margin-bottom: 2rem;
+  }
+  
+  textarea {
+    background-color: #b7b7b7;
+    width: 80%;
+    color: #fff;
+    margin-left: 12%;
+    font-size: 1.5rem;
+    padding: 16px 16px;
+    border-radius: 2rem;
+    border-color: #000;
+    margin-bottom: 2.5rem;
+  }
+  
+  input::placeholder {
+    color: #111111;
+  }
+  
+  textarea::placeholder {
+    color: #111111;
+  }
+  
+  input:focus-within {
+    outline: none;
+    border-color: #080680;
+    border-width: 3px;
+  }
+  
+  textarea:focus-within {
+    outline: none;
+    border-color: #080680;
+    border-width: 3px;
+  }
+  
+  
+  contact-btn:hover {
+    background-color: #070561;
+    color: #fff;
+    transform: translateY(-1rem);
+  }
+  
+  
+  .contact-container h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 2rem;
+  }
+  
+  .contact-map {
+    border-radius: 2rem;
+    width: 80%;
+    margin: 2rem;
+  }
+  
+  .contact-text-secondary {
+    color: #fff;
+    margin-top: 4rem;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+
+  button{
+    background-color: #b7b7b7;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    border: none;
+    color: #000;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+    display: flex;
+    margin: auto;
+  }

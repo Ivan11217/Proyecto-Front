@@ -1,0 +1,22 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/inforbg.jpg');
+    background-size: contain;
+  }
+  
+  .container {
+    max-width: 960px;
+  }
+  
+  .pricing-header {
+    max-width: 700px;
+  } 
+
+  .card-body{  
+    background-color: beige;
+    border-radius: 5px; 
+  }
+
+  .btn:hover  {
+    background-color: #0b0561;
+    color: #fff;
+  }
